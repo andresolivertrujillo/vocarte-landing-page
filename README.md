@@ -55,12 +55,13 @@ Reemplázala por el número real con código de país, sin `+`, espacios ni guio
 
 ## Imágenes e identidad
 
-- `LOGO.jpeg` es el archivo original y debe conservarse intacto.
-- `public/logo-vocarte.jpg` es la copia recortada y optimizada para la web.
-- `public/favicon.png` es el icono del navegador.
-- `public/og-vocarte.jpg` es la imagen para compartir el enlace en redes y mensajería.
+- `LOGO.jpeg` es el archivo original oficial y debe conservarse intacto.
+- `public/logo-vocarte.jpeg` es una copia exacta, idéntica byte por byte, utilizada por la web.
+- La misma copia oficial se usa temporalmente como favicon e imagen para compartir el enlace.
 
-Para sustituir una imagen, conserva el mismo nombre dentro de `public/` o actualiza la ruta correspondiente en los componentes y en `index.html`. Mantén proporciones similares para evitar cambios de maquetación.
+No recortes, recomprimas, conviertas, deformes ni recolorees estos archivos. En el futuro se puede solicitar una versión cuadrada oficial para el favicon y una tarjeta social aprobada por Vocarte, pero el proyecto no genera ni utiliza versiones alternativas de la marca.
+
+Para sustituir el logo en el futuro, actualiza tanto `LOGO.jpeg` como su copia exacta `public/logo-vocarte.jpeg` y confirma que ambos archivos tengan el mismo hash SHA-256.
 
 ## Redes sociales futuras
 

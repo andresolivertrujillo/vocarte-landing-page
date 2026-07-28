@@ -21,7 +21,7 @@ export function Header() {
     <header className="site-header">
       <div className="container header-inner">
         <a className="brand-link" href="#inicio" aria-label="Vocarte, ir al inicio">
-          <img src="/logo-vocarte.jpg" alt="Vocarte" width="184" height="74" />
+          <img src="/logo-vocarte.jpeg" alt="Vocarte" width="1536" height="1024" />
         </a>
 
         <nav className="desktop-nav" aria-label="Navegación principal">

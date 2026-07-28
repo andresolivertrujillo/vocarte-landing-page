@@ -149,10 +149,10 @@ function App() {
                 <span className="art-card-kicker">Tu talento tiene una voz</span>
                 <div className="art-logo-wrap">
                   <img
-                    src="/logo-vocarte.jpg"
+                    src="/logo-vocarte.jpeg"
                     alt="Vocarte, formando artistas, inspirando personas"
-                    width="620"
-                    height="300"
+                    width="1536"
+                    height="1024"
                   />
                 </div>
                 <div className="art-stages" aria-hidden="true">
@@ -274,10 +274,10 @@ function App() {
             <div className="about-visual">
               <div className="about-frame">
                 <img
-                  src="/logo-vocarte.jpg"
+                  src="/logo-vocarte.jpeg"
                   alt="Logo de la escuela de arte Vocarte"
-                  width="620"
-                  height="300"
+                  width="1536"
+                  height="1024"
                   loading="lazy"
                 />
               </div>
@@ -393,7 +393,13 @@ function App() {
       <footer className="site-footer">
         <div className="container footer-grid">
           <div className="footer-brand">
-            <img src="/logo-vocarte.jpg" alt="Vocarte" width="184" height="74" loading="lazy" />
+            <img
+              src="/logo-vocarte.jpeg"
+              alt="Vocarte"
+              width="1536"
+              height="1024"
+              loading="lazy"
+            />
             <p>{business.tagline}</p>
           </div>
           <div className="footer-location">
