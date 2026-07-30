@@ -5,6 +5,7 @@ import { WhatsAppLink } from './WhatsAppLink'
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const logoUrl = `${import.meta.env.BASE_URL}logo-vocarte.jpeg`
 
   useEffect(() => {
     const closeOnEscape = (event: KeyboardEvent) => {
@@ -21,7 +22,7 @@ export function Header() {
     <header className="site-header">
       <div className="container header-inner">
         <a className="brand-link" href="#inicio" aria-label="Vocarte, ir al inicio">
-          <img src="/logo-vocarte.jpeg" alt="Vocarte" width="1536" height="1024" />
+          <img src={logoUrl} alt="Vocarte" width="1536" height="1024" />
         </a>
 
         <nav className="desktop-nav" aria-label="Navegación principal">

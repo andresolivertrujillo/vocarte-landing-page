@@ -95,6 +95,8 @@ function SectionHeading({
 }
 
 function App() {
+  const logoUrl = `${import.meta.env.BASE_URL}logo-vocarte.jpeg`
+
   return (
     <>
       <a className="skip-link" href="#contenido">
@@ -149,7 +151,7 @@ function App() {
                 <span className="art-card-kicker">Tu talento tiene una voz</span>
                 <div className="art-logo-wrap">
                   <img
-                    src="/logo-vocarte.jpeg"
+                    src={logoUrl}
                     alt="Vocarte, formando artistas, inspirando personas"
                     width="1536"
                     height="1024"
@@ -274,7 +276,7 @@ function App() {
             <div className="about-visual">
               <div className="about-frame">
                 <img
-                  src="/logo-vocarte.jpeg"
+                  src={logoUrl}
                   alt="Logo de la escuela de arte Vocarte"
                   width="1536"
                   height="1024"
@@ -394,7 +396,7 @@ function App() {
         <div className="container footer-grid">
           <div className="footer-brand">
             <img
-              src="/logo-vocarte.jpeg"
+              src={logoUrl}
               alt="Vocarte"
               width="1536"
               height="1024"
