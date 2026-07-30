@@ -1,24 +1,30 @@
 import {
   ArrowDown,
   ArrowRight,
+  CalendarDays,
   Check,
   Clock3,
+  Compass,
   Drama,
+  Eye,
   Guitar,
   HeartHandshake,
   MapPin,
   Mic2,
   Music2,
   Piano,
+  Quote,
   ShieldCheck,
   Sparkles,
   Star,
+  Target,
   Users,
 } from 'lucide-react'
 import type { ComponentType, SVGProps } from 'react'
 import { Header } from './components/Header'
 import { WhatsAppLink } from './components/WhatsAppLink'
 import { business } from './config/business'
+import { institutionalProfile } from './config/institutional'
 
 type IconComponent = ComponentType<SVGProps<SVGSVGElement>>
 
@@ -75,11 +81,13 @@ const faqs = [
 ]
 
 function SectionHeading({
+  id,
   eyebrow,
   title,
   description,
   align = 'left',
 }: {
+  id?: string
   eyebrow: string
   title: string
   description?: string
@@ -88,7 +96,7 @@ function SectionHeading({
   return (
     <div className={`section-heading section-heading-${align}`}>
       <p className="eyebrow">{eyebrow}</p>
-      <h2>{title}</h2>
+      <h2 id={id}>{title}</h2>
       {description && <p className="section-description">{description}</p>}
     </div>
   )
@@ -293,9 +301,10 @@ function App() {
             </div>
             <div className="about-copy">
               <SectionHeading
-                eyebrow="Sobre Vocarte"
+                eyebrow="Conoce VOCARTE"
                 title="Arte, confianza y acompañamiento"
               />
+              <p className="about-denomination">{institutionalProfile.denomination}</p>
               <p className="about-lead">
                 Vocarte es un espacio donde niños y jóvenes pueden explorar, aprender y expresarse
                 mediante el arte.
@@ -319,6 +328,123 @@ function App() {
                   Espacio para explorar distintos lenguajes artísticos
                 </li>
               </ul>
+              <blockquote className="about-motto">
+                <Quote aria-hidden="true" />
+                <div>
+                  <span>Nuestro lema</span>
+                  <p>{institutionalProfile.motto}</p>
+                </div>
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="section profile-section"
+          id="perfil-institucional"
+          aria-labelledby="perfil-institucional-title"
+        >
+          <div className="container">
+            <SectionHeading
+              id="perfil-institucional-title"
+              eyebrow="Perfil institucional"
+              title="Una formación artística con raíces y dirección"
+              description="Los datos que dan origen a VOCARTE y orientan su labor formativa."
+            />
+
+            <div className="profile-layout">
+              <article className="objective-card">
+                <div className="objective-icon">
+                  <Target aria-hidden="true" />
+                </div>
+                <p className="profile-label">Objetivo</p>
+                <h3>Formación artística integral</h3>
+                <p>{institutionalProfile.objective}</p>
+              </article>
+
+              <div className="profile-facts">
+                <article className="profile-fact">
+                  <div className="profile-fact-icon">
+                    <Sparkles aria-hidden="true" />
+                  </div>
+                  <div>
+                    <p className="profile-label">Denominación</p>
+                    <h3>{institutionalProfile.denomination}</h3>
+                  </div>
+                </article>
+
+                <article className="profile-fact profile-fact-foundation">
+                  <div className="profile-fact-icon">
+                    <CalendarDays aria-hidden="true" />
+                  </div>
+                  <div className="foundation-details">
+                    <div>
+                      <p className="profile-label">Fecha de fundación</p>
+                      <h3>{institutionalProfile.foundation.date}</h3>
+                    </div>
+                    <div>
+                      <p className="profile-label">Lugar de fundación</p>
+                      <address>{institutionalProfile.foundation.place}</address>
+                    </div>
+                  </div>
+                </article>
+
+                <article className="profile-fact">
+                  <div className="profile-fact-icon">
+                    <Users aria-hidden="true" />
+                  </div>
+                  <div>
+                    <p className="profile-label">Fundadores</p>
+                    <h3>Promotores asociados</h3>
+                    <p>{institutionalProfile.founders}</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="section institution-values-section"
+          id="mision-vision"
+          aria-labelledby="mision-vision-title"
+        >
+          <div className="container">
+            <SectionHeading
+              id="mision-vision-title"
+              eyebrow="Lo que nos orienta"
+              title="Misión, visión y propósito"
+              description="Principios institucionales que conectan la formación artística con el desarrollo integral y la comunidad."
+              align="center"
+            />
+
+            <div className="institution-values-grid">
+              <article className="institution-value-card">
+                <div className="institution-value-icon">
+                  <Compass aria-hidden="true" />
+                </div>
+                <p className="profile-label">Nuestro presente</p>
+                <h3>Misión</h3>
+                <p>{institutionalProfile.mission}</p>
+              </article>
+
+              <article className="institution-value-card institution-value-card-dark">
+                <div className="institution-value-icon">
+                  <Eye aria-hidden="true" />
+                </div>
+                <p className="profile-label">Hacia dónde vamos</p>
+                <h3>Visión</h3>
+                <p>{institutionalProfile.vision}</p>
+              </article>
+
+              <article className="institution-value-card institution-value-card-gold">
+                <div className="institution-value-icon">
+                  <HeartHandshake aria-hidden="true" />
+                </div>
+                <p className="profile-label">Por qué lo hacemos</p>
+                <h3>Propósito</h3>
+                <p>{institutionalProfile.purpose}</p>
+              </article>
             </div>
           </div>
         </section>
