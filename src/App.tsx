@@ -71,7 +71,7 @@ const faqs = [
   {
     question: '¿Es necesario tener experiencia previa?',
     answer:
-      'Puedes escribirnos por WhatsApp para recibir orientación según el taller que te interesa y tu experiencia actual.',
+      'Puedes escribirnos por WhatsApp para brindarte la mejor orientación según el taller que te interesa y tu experiencia actual.',
   },
   {
     question: '¿Cómo puedo solicitar información?',
