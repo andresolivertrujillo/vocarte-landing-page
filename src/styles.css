@@ -488,7 +488,7 @@
     position: absolute;
     z-index: 4;
     right: -9px;
-    bottom: 13px;
+    bottom: -10px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -1405,8 +1405,12 @@
 
     .hero-art {
       width: min(520px, 100%);
-      min-height: 450px;
+      min-height: 500px;
       margin: 22px auto 0;
+    }
+
+    .art-caption {
+      bottom: 5px;
     }
 
     .trust-grid {
@@ -1555,7 +1559,7 @@
     }
 
     .hero-art {
-      min-height: 370px;
+      min-height: 455px;
     }
 
     .art-card {
@@ -1576,7 +1580,7 @@
 
     .art-caption {
       right: 0;
-      bottom: -7px;
+      bottom: 0;
     }
 
     .note-one {
