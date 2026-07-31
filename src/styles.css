@@ -407,6 +407,24 @@
     color: var(--gold-400);
   }
 
+  .workshop-teacher {
+    display: grid;
+    gap: 2px;
+    margin: -2px 0 12px;
+    color: var(--navy-800);
+    font-size: 0.94rem;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+
+  .workshop-teacher span {
+    color: var(--gold-600);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
   .hero-art {
     position: relative;
     min-height: 480px;

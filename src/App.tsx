@@ -226,6 +226,10 @@ function App() {
                     </div>
                     <div>
                       <h3>{workshop.name}</h3>
+                      <p className="workshop-teacher">
+                        <span>Profesor(a)</span>
+                        {workshop.teacher}
+                      </p>
                       <p>{workshop.description}</p>
                     </div>
                     <a
