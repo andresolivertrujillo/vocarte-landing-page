@@ -226,10 +226,17 @@ function App() {
                     </div>
                     <div>
                       <h3>{workshop.name}</h3>
-                      <p className="workshop-teacher">
-                        <span>Profesor(a)</span>
-                        {workshop.teacher}
-                      </p>
+                      <div className="workshop-teachers">
+                        <span className="workshop-teachers-label">Profesor(a)</span>
+                        <ul>
+                          {workshop.teachers.map((teacher) => (
+                            <li key={`${workshop.name}-${teacher.name}-${teacher.group ?? 'general'}`}>
+                              {teacher.group && <span>{teacher.group}</span>}
+                              <strong>{teacher.name}</strong>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                       <p>{workshop.description}</p>
                     </div>
                     <a
