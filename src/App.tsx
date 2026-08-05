@@ -554,7 +554,12 @@ function App() {
           </div>
           <div className="footer-contact">
             <p className="footer-label">Conversemos</p>
-            <WhatsAppLink showIcon>WhatsApp</WhatsAppLink>
+            <WhatsAppLink
+              showIcon
+              ariaLabel={`Abrir WhatsApp de Vocarte al ${business.whatsapp.display}`}
+            >
+              WhatsApp · {business.whatsapp.display}
+            </WhatsAppLink>
           </div>
         </div>
         <div className="container footer-bottom">

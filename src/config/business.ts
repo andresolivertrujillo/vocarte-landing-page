@@ -3,8 +3,8 @@ export const business = {
   tagline: 'Formando artistas, inspirando personas',
   location: 'Ventanilla, Perú',
   whatsapp: {
-    // PENDIENTE: reemplaza este valor por el número real, con código de país y sin "+" ni espacios.
-    number: '519XXXXXXXX',
+    number: '51936551118',
+    display: '936 551 118',
     message: 'Hola, quisiera recibir información sobre los talleres de Vocarte.',
   },
   navigation: [
