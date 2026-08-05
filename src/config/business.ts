@@ -50,9 +50,9 @@ export const business = {
       tone: 'gold',
     },
     {
-      name: 'Metalófono',
+      name: 'Melódica',
       teachers: [{ group: null, name: 'Derek Huertas Montyoy' }],
-      description: 'Una forma cercana y dinámica de acercarse a las notas, la melodía y el ritmo.',
+      description: 'Un espacio para aprender respiración, teclado, melodía y ritmo de forma dinámica.',
       icon: 'music',
       tone: 'sky',
     },
