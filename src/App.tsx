@@ -182,7 +182,7 @@ function App() {
                   <Drama />
                 </span>
                 <span>
-                  <strong>9 talleres</strong>
+                  <strong>10 talleres</strong>
                   Música, danza y teatro
                 </span>
               </div>
@@ -217,7 +217,7 @@ function App() {
             <SectionHeading
               eyebrow="Encuentra tu forma de crear"
               title="Talleres para explorar tu talento"
-              description="Nueve caminos para acercarse al arte, aprender con otros y disfrutar cada descubrimiento."
+              description="Diez caminos para acercarse al arte, aprender con otros y disfrutar cada descubrimiento."
               align="center"
             />
             <div className="workshop-grid">

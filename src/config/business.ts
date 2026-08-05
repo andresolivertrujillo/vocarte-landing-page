@@ -15,14 +15,18 @@ export const business = {
   ],
   workshops: [
     {
-      name: 'Canto',
-      teachers: [
-        { group: 'Canto Kids', name: 'Derek Huertas Montyoy' },
-        { group: 'Canto Juvenil', name: 'Stefany Martinez Castañeda' },
-      ],
-      description: 'Un espacio para explorar la voz, la escucha y la interpretación musical.',
+      name: 'Canto Kids',
+      teachers: [{ group: null, name: 'Derek Huertas Montyoy' }],
+      description: 'Un espacio para que los niños exploren su voz, la escucha y la interpretación musical.',
       icon: 'mic',
       tone: 'blue',
+    },
+    {
+      name: 'Canto Juvenil',
+      teachers: [{ group: null, name: 'Stefany Martinez Castañeda' }],
+      description: 'Técnica vocal, interpretación y confianza para que los jóvenes desarrollen su propia voz.',
+      icon: 'mic',
+      tone: 'violet',
     },
     {
       name: 'Piano',
