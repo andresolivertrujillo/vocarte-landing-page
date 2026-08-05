@@ -667,7 +667,7 @@
 
   .workshop-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
@@ -692,16 +692,6 @@
     border-color: color-mix(in srgb, var(--card-color) 35%, var(--line));
     box-shadow: var(--shadow-sm);
     transform: translateY(-6px);
-  }
-
-  .workshop-card:nth-child(5),
-  .workshop-card:nth-child(6),
-  .workshop-card:nth-child(7) {
-    grid-column: span 1;
-  }
-
-  .workshop-card:nth-child(5) {
-    grid-column-start: 2;
   }
 
   .workshop-icon {
@@ -1668,14 +1658,6 @@
       grid-template-columns: repeat(3, 1fr);
     }
 
-    .workshop-card:nth-child(5) {
-      grid-column-start: auto;
-    }
-
-    .workshop-card:nth-child(7) {
-      grid-column-start: 2;
-    }
-
     .age-layout {
       gap: 40px;
     }
@@ -1756,10 +1738,6 @@
 
     .workshop-grid {
       grid-template-columns: 1fr 1fr;
-    }
-
-    .workshop-card:nth-child(7) {
-      grid-column-start: auto;
     }
 
     .age-layout {

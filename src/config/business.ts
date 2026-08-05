@@ -39,11 +39,25 @@ export const business = {
       tone: 'coral',
     },
     {
+      name: 'Cajón',
+      teachers: [{ group: null, name: 'José de la Cruz' }],
+      description: 'Ritmo, coordinación y expresión a través de uno de nuestros instrumentos más representativos.',
+      icon: 'drum',
+      tone: 'gold',
+    },
+    {
       name: 'Metalófono',
       teachers: [{ group: null, name: 'Derek Huertas Montyoy' }],
       description: 'Una forma cercana y dinámica de acercarse a las notas, la melodía y el ritmo.',
       icon: 'music',
       tone: 'sky',
+    },
+    {
+      name: 'Flauta dulce',
+      teachers: [{ group: null, name: 'Axel Zapata' }],
+      description: 'Respiración, melodía y lectura musical para descubrir el instrumento paso a paso.',
+      icon: 'wind',
+      tone: 'green',
     },
     {
       name: 'Danza folclórica',

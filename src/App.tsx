@@ -6,6 +6,7 @@ import {
   Clock3,
   Compass,
   Drama,
+  Drum,
   Eye,
   Guitar,
   HeartHandshake,
@@ -19,6 +20,7 @@ import {
   Star,
   Target,
   Users,
+  Wind,
 } from 'lucide-react'
 import type { ComponentType, SVGProps } from 'react'
 import { Header } from './components/Header'
@@ -36,6 +38,8 @@ const workshopIcons: Record<string, IconComponent> = {
   sparkles: Sparkles,
   star: Star,
   masks: Drama,
+  drum: Drum,
+  wind: Wind,
 }
 
 const benefits = [
@@ -178,7 +182,7 @@ function App() {
                   <Drama />
                 </span>
                 <span>
-                  <strong>7 talleres</strong>
+                  <strong>9 talleres</strong>
                   Música, danza y teatro
                 </span>
               </div>
@@ -213,7 +217,7 @@ function App() {
             <SectionHeading
               eyebrow="Encuentra tu forma de crear"
               title="Talleres para explorar tu talento"
-              description="Siete caminos para acercarse al arte, aprender con otros y disfrutar cada descubrimiento."
+              description="Nueve caminos para acercarse al arte, aprender con otros y disfrutar cada descubrimiento."
               align="center"
             />
             <div className="workshop-grid">
